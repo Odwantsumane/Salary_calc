@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>$How Much$</title>
+        <link rel="stylesheet" href="how.css"></link>
+    </head>
+    <body>
+        
+        
+        <div class="grid">
+        <div class="title"> Salary Calculator </div>
+        <!-- Message -->
+        <div id="mes" style="display:none;width:fit-content;">  
+            <p id="salary" style="font-size: 18px;width:30%;"></p>
+            
+            <a href="www.google.com">Confirm</a>
+        </div>
+
+        <!-- <a href="www.google.com">click me</a> -->
+        <form class="amounts">
+            
+            <input id="amount" type="number" placeholder=" Amount /hr"/>
+            <input id="hours" class="allem" type="number" placeholder="No. of hours /d" min="1" max="24"/>
+            <input id="days" class="allem" type="number" placeholder="No. of days /wk" style="display: none;" min="1" max="7"/>
+            <input id="weeks" class="allem" type="number" placeholder="No. of weeks /m" style="display: none;" min="1" max="4"/>
+            <input id="months" class="allem" type="number" placeholder="No. of months /y" style="display: none;" min="1" max="12"/>
+            
+            
+        </form>
+        <button id="next" onclick="collect()">NEXT</button>
+        <button id="submit" type="submit" value="CHECK" onclick="amounts()" style="visibility: hidden;">CHECK</button>
+        
+        <button class="show" id="jst_show" style="visibility:hidden" onclick="show()">Stop</button>
+    
+        <div class="r_grid">
+            <div class="dates">
+                <div id="day">Per Day: </div>
+                <h5 id ="cur" class="cur">R</h5>
+                <p id="dayy" class="bal">0.00</p>
+            </div>
+            <div class="dates"> 
+                <div id="week">Per Week:</div>
+                <h5 id ="cur1" class="cur">R</h5>
+                <p id="weekk" class="bal1">0.00</p>
+            </div>
+            <div class="dates"> 
+                <div id="month">Per Month:</div>
+                <h5 id ="cur2" class="cur">R</h5>
+                <p id="monthh" class="bal2">0.00</p>
+            </div>
+            <div class="dates"> 
+                <div id="six_months">Six Months</div> 
+                <h5 id ="cur3" class="cur">R</h5>
+                <p id="six_monthss" class="bal3">0.00</p>
+            </div>
+            <div class="dates"> 
+                <div id="year">Per Annum</div>
+                <h5 id ="cur4" class="cur">R</h5>
+                <p id="yearr" class="bal4">0.00</p>
+            </div>
+            <div class="dates"> 
+                <div id="five_years" >Five Years</div>
+                <h5 id ="cur5" class="cur">R</h5> 
+                <p id="five_yearss" class="bal5">0.00</p>
+            </div>
+            <div class="dates">
+                <div id="decade">Per Decade</div>
+                <h5 id ="cur6" class="cur">R</h5> 
+                <p id="decadee" class="bal6">0.00</p>
+            </div>
+            
+        </div>
+        </div>
+
+        <script src="howm.js" ></script>
+    </body>
+</html>
